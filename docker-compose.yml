@@ -1,0 +1,15 @@
+services:
+  music_service:
+    build: ./music_service
+    ports:
+      - "5001:5001"
+
+  playlist_service:
+    build: ./playlist_service
+    ports:
+      - "5002:5002"
+
+  playback_service:
+    build: ./playback_service
+    ports:
+      - "5003:5003"
